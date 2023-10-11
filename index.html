@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/setRem.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./index.html"><img src="./image/index/logo.jpg" alt=""></a>
+        <div class="myapp">
+            <a href="./my.html" class="my"><img src="./image/index/my.jpg" alt=""></a>
+            <div class="xiazai"><img src="./image/index/xiazai.jpg" alt=""></div>
+        </div>
+    </header>
+    <!-- 第一屏 -->
+    <div class="First">
+        <div class="banner"><input type="text" placeholder="输入小区或房源名开始找房咯"></div>
+        <nav>
+            <ul>
+                <li><img src="./image/index/index_03.png" alt="" class="secondhand">二手房</li>
+                <li><img src="./image/index/index_05.png" alt="" class="newhouse">新房</li>
+                <li><img src="./image/index/index_07.png" alt="" class="rental">租房</li>
+                <li><img src="./image/index/index_09.png" alt="" class="sold">卖房</li>
+            </ul>
+        </nav>
+        <img src="./image/index/banner2.png" alt="">
+    </div>
+    <!-- 第二屏 -->
+    <div class="Second">
+        <h2><p>热门房源</p><span>Hot house</span></h2>
+        <ul>
+            <li>
+                <img src="./image/index/img1.jpg" alt="">
+                <div class="sec_txt">
+                    <h3>文化部中间层 一层带阁楼</h3>
+                    <p>2室1厅96㎡南北<b>1105万</b></p>
+                    <p><span>红庙北里</span><span>14268元/平</span></p>
+                    <a>学区房</a><a>独家</a>
+                </div>
+            </li>
+            <li>
+                <img src="./image/index/img2.png" alt="">
+                <div class="sec_txt">
+                    <h3>光大水墨 精装复式&nbsp; 稀缺</h3>
+                    <p>室1厅96㎡南北<b>280万</b></p>
+                    <p><span>光大水墨</span><span>14268元/平</span></p>
+                    <a>学区房</a><a>独家</a><a>满五唯一</a>
+                </div>
+            </li>
+            <li>
+                <img src="./image/index/img3.png" alt="">
+                <div class="sec_txt">
+                    <h3>南北通透两居 精装修 &nbsp;无</h3>
+                    <p>2室1厅96㎡南北<b>320万</b></p>
+                    <p><span>北京新天地</span><span>14268元/平</span></p>
+                    <a>地铁房</a><a>独家</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 第三屏 -->
+    <div class="Third">
+        <div class="third_title">
+            <h3 class="h_active">热门关注</h3>
+            <h3>友情链接</h3>
+        </div>
+        <div class="third_list">
+            <ul>
+                <li>北京二手房</li>
+                <li>北京二手房价</li>
+                <li>海淀日租房</li>
+                <li>朝阳新房</li>
+            </ul>
+            <ul>
+                <li>北京找房无忧</li>
+                <li>青年家园</li>
+                <li>免税房源</li>
+                <li>满五年唯一免税</li>
+            </ul>
+        </div>
+    </div>
+    <!-- AD -->
+    <div class="ad">
+        <img src="./image/index/close.png" alt="" class="close">
+        <img src="./image/index/download.png" alt="" class="download">
+        <p>找房无忧<br><span>市场行情，一手掌握！</span></p>
+        <div>免费下载</div>
+    </div>
+    <footer>
+        <h3>北京找房无忧网 > 首页</h3>
+        <div class="clint">
+            <div class="iphone">
+                <img src="./image/index/apple.png" alt="">
+                <div class="clint_txt">iphone<br>客户端</div>
+            </div>
+            <div class="android">
+                <img src="./image/index/android.png" alt="">
+                <div class="clint_txt">Android<br>客户端</div>
+            </div>
+        </div>
+        <p>北京找房无忧房地产经纪有限公司</p>
+        <span>网络经营许可证京ICP备20160812号</span>
+    </footer>
+</body>
+
+</html>
+<script>
+    
+    var secondhand=document.querySelector('.secondhand')
+    var rental=document.querySelector('.rental')
+    var close=document.querySelector('.close')
+    var ad=document.querySelector('.ad')
+    
+    secondhand.onclick=()=>{window.open('./secondhandList.html','_self')}
+    rental.onclick=()=>{window.open('./rentalList.html','_self')}
+    close.onclick=()=>{ad.style.display='none'}
+</script>

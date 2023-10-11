@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  html {
+    min-width: 375px;
+  }
+  body {
+    background-color: #F5F5F5;
+  }
+  header {
+    width: 100%;
+    height: 6rem;
+    background-color: #ff8a00;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    height: 5rem;
+  }
+  header .logo img {
+    height: 5rem;
+    width: auto;
+  }
+  header .myapp {
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    width: 10rem;
+  }
+  header .myapp .my,
+  header .myapp .xiazai {
+    height: 4.5rem;
+    display: block;
+  }
+  header .myapp .my img,
+  header .myapp .xiazai img {
+    height: 4.5rem;
+    width: auto;
+  }
+  footer {
+    width: 100%;
+    background-color: #2f3130;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  footer h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: gray;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+  }
+  footer .clint {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .clint .iphone,
+  footer .clint .android {
+    width: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+  }
+  footer p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: gray;
+  }
+  footer span {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 1rem;
+  }
+  .Nav {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 1.4rem;
+    border-bottom: 1px solid gray;
+  }
+  .Nav a {
+    color: #2f3130;
+  }
+  .Second {
+    width: 100%;
+  }
+  .Second ul {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    background-color: white;
+  }
+  .Second ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ff8a00;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+  .Second ul li img {
+    width: 27%;
+  }
+  .Second ul li .sec_txt {
+    width: 65%;
+  }
+  .Second ul li .sec_txt h3 {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1rem;
+  }
+  .Second ul li .sec_txt p {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  .Second ul li .sec_txt p b {
+    float: right;
+    color: #ff8a00;
+  }
+  .Second ul li .sec_txt p:nth-of-type(2),
+  .Second ul li .sec_txt p:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+  }
+  .Second ul li .sec_txt a {
+    display: inline-block;
+    background-color: #F4F7F9;
+    padding: 0.3rem;
+    color: #849AAE;
+    margin-right: 0.5rem;
+  }
+  .Second ul li:last-of-type {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
