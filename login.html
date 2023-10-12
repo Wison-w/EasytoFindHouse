@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/myCookie.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/setRem.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./index.html"><img src="./image/index/logo.jpg" alt=""></a>
+        <div class="myapp">
+            <a href="./my.html" class="my"><img src="./image/index/my.jpg" alt=""></a>
+            <div class="xiazai"><img src="./image/index/xiazai.jpg" alt=""></div>
+        </div>
+    </header>
+    <!-- Nav -->
+    <div class="Nav"><a href="./index.html"><b>首页</b></a> > <a href="./my.html">我的</a> > <a href="./login.html">登录</a>
+    </div>
+    <!-- tab切换 -->
+    <div class="login_tab">
+        <div class="tab tab_active">普通登录</div>
+        <div class="tab">验证码快捷登录</div>
+    </div>
+    <!-- 输入信息 -->
+    <ul class="lul ul ul_active">
+        <li><input type="text" placeholder="请输入手机号" class="number1"></li>
+        <li><input type="password" placeholder="请输入密码" class="pwd"></li>
+        <li><button class="login1">立即登录</button></li>
+    </ul>
+    <ul class="lul ul">
+        <li><input type="text" placeholder="请输入手机号" class="number2"><button class="getcode">发送验证码</button></li>
+        <li><input type="text" placeholder="请输入手机验证码" class="code"></li>
+        <li><button class="login2">验证并登录</button></li>
+    </ul>
+    <p class=" p"><a href="./register.html">立即注册</a><a href="./forget.html">忘记密码</a></p>
+</body>
+
+</html>
+<script>
+    var tab = document.querySelectorAll('.tab');
+    var ul = document.querySelectorAll('.ul')
+    for (var i = 0; i < tab.length; i++) {
+        tab[i].setAttribute('index', i);
+        tab[i].onclick = function () {
+            var index = this.getAttribute('index')
+            for (var j = 0; j < tab.length; j++) {
+                tab[j].className = 'tab'
+                tab[index].className = 'tab tab_active'
+                ul[j].className = 'lul ul'
+                ul[index].className = 'lul ul ul_active'
+            }
+        }
+    }
+</script>
+
