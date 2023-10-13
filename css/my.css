@@ -1,0 +1,115 @@
+.header {
+  width: 100%;
+  height: 21rem;
+  background: url(../image/my/bg1.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.header .myapp {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 6rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+.header .myapp .my,
+.header .myapp .xiazai {
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-left: 2rem;
+}
+.header .user2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+}
+.header .login {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  display: block;
+  padding: 0.6rem 2rem;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+}
+nav {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+nav ul {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+nav ul li {
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid gray;
+  position: relative;
+  padding-left: 3.5rem;
+  box-sizing: border-box;
+  margin: 1rem 0;
+}
+nav ul li img {
+  position: absolute;
+  right: 0;
+  width: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav ul li:nth-of-type(1) {
+  background: url(../image/my/icon1.png) no-repeat left center;
+  background-size: 2.5rem;
+}
+nav ul li:nth-of-type(2) {
+  background: url(../image/my/icon2.png) no-repeat left center;
+  background-size: 2.5rem;
+}
+nav ul li:nth-of-type(3) {
+  background: url(../image/my/icon3.png) no-repeat left center;
+  background-size: 2.5rem;
+}
+nav ul li:nth-of-type(4) {
+  background: url(../image/my/icon4.png) no-repeat left center;
+  background-size: 2.5rem;
+  border: none;
+}
+.banner {
+  width: 100%;
+  background: url(../image/my/bg1.png) no-repeat;
+  background-size: cover;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.banner img {
+  width: 8rem;
+}
+.banner p {
+  color: white;
+}
+.logout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logout button {
+  width: 70%;
+  background-color: #fff;
+  border: 1px solid gray;
+  color: #ff8a00;
+  padding: 1rem 0;
+}
