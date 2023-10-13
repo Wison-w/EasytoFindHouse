@@ -6,14 +6,21 @@ function list(){
     for (var i = 0; i < list.length; i++) {
         list[i].setAttribute('index', i)
         list[i].onclick = function (e) {
+            nav.className = 'n_active';
             var index = this.getAttribute('index');
-            for (var j = 0; j < list.length; j++) {
-                list[j].className = 'list';
-                content[j].className = 'list_content';
+            
+            if(list[index].className == 'list'){
+                for (var j = 0; j < list.length; j++) {
+                    list[j].className = 'list';
+                    content[j].className = 'list_content';
+                }
                 list[index].className = 'list li_active';
                 content[index].className = 'list_content lc_active';
+            }else{
+                list[index].className = 'list';
+                content[index].className = 'list_content';
+                nav.className=''
             }
-            nav.className = 'n_active';
             window.event ? window.event.cancelBubble = true : event.stopPropagation(); 
         }
         content[i].onclick=function(e){
