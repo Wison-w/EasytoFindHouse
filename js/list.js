@@ -28,13 +28,5 @@ function list(){
             nav.className='';
         }
     }
-    var ipt=document.querySelector('input')
-    ipt.onkeydown = function(e){
-        e = e|| window.event;
-        //模拟 按回车键发送 回车键的键码 13
-        if(e.keyCode == 13){
-            window.open('./rentalDetail.html','_self')
-        }
-    }
 }
 window.addEventListener('load',list)
